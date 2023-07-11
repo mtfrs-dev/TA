@@ -1,0 +1,1104 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Togi_Stark> ssh root@167.99.76.33
+Welcome to Ubuntu 22.10 (GNU/Linux 5.19.0-23-generic x86_64)Welcome to Ubuntu 22.10 (GNU/Linux 5.19.0-23-generic x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri May  5 16:47:12 UTC 2023
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   11.2% of 24.06GB   IPv4 address for eth0: 167.99.76.33
+  Memory usage: 24%                IPv4 address for eth0: 10.15.0.6
+  Swap usage:   0%                 IPv4 address for eth1: 10.104.0.3
+  Processes:    105
+
+104 updates can be applied immediately.
+75 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+New release '23.04' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Fri May  5 16:12:18 2023 from 110.137.36.24
+root@postgis:~# ls
+snap  tubes-sig
+root@postgis:~# cd tubes-sig/
+root@postgis:~/tubes-sig# sudo apt install php8.1.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package php8.1.
+E: Couldn't find any package by glob 'php8.1.'
+root@postgis:~/tubes-sig# sudo apt install php8.1
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapache2-mod-php8.1 libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap liblua5.3-0 mailcap mime-support php-common php8.1-cli php8.1-common php8.1-opcache php8.1-readline
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser php-pear
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapache2-mod-php8.1 libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap liblua5.3-0 mailcap mime-support php-common php8.1 php8.1-cli php8.1-common php8.1-opcache
+  php8.1-readline
+0 upgraded, 18 newly installed, 0 to remove and 110 not upgraded.
+Need to get 7217 kB of archives.
+After this operation, 29.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.10.1 [106 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.10.1 [91.2 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5ubuntu4.22.10.1 [11.1 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 libaprutil1-ldap amd64 1.6.1-5ubuntu4.22.10.1 [9054 B]
+Get:5 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 apache2-bin amd64 2.4.54-2ubuntu1.3 [1335 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 apache2-data all 2.4.54-2ubuntu1.3 [163 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 apache2-utils amd64 2.4.54-2ubuntu1.3 [88.2 kB]
+Get:9 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 mime-support all 3.66 [3696 B]
+Get:11 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 apache2 amd64 2.4.54-2ubuntu1.3 [97.3 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 php-common all 2:92ubuntu1 [12.4 kB]
+Get:13 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-common amd64 8.1.7-1ubuntu3.3 [1125 kB]
+Get:14 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-opcache amd64 8.1.7-1ubuntu3.3 [367 kB]
+Get:15 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-readline amd64 8.1.7-1ubuntu3.3 [13.4 kB]
+Get:16 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-cli amd64 8.1.7-1ubuntu3.3 [1845 kB]
+Get:17 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 libapache2-mod-php8.1 amd64 8.1.7-1ubuntu3.3 [1777 kB]
+Get:18 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1 all 8.1.7-1ubuntu3.3 [9156 B]
+Fetched 7217 kB in 0s (18.7 MB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... 79111 files and directories currently installed.)
+Preparing to unpack .../00-libapr1_1.7.0-8ubuntu0.22.10.1_amd64.deb ...
+Unpacking libapr1:amd64 (1.7.0-8ubuntu0.22.10.1) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../01-libaprutil1_1.6.1-5ubuntu4.22.10.1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.1-5ubuntu4.22.10.1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../03-libaprutil1-ldap_1.6.1-5ubuntu4.22.10.1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Selecting previously unselected package liblua5.3-0:amd64.
+Preparing to unpack .../04-liblua5.3-0_5.3.6-1build1_amd64.deb ...
+Unpacking liblua5.3-0:amd64 (5.3.6-1build1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../05-apache2-bin_2.4.54-2ubuntu1.3_amd64.deb ...
+Unpacking apache2-bin (2.4.54-2ubuntu1.3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../06-apache2-data_2.4.54-2ubuntu1.3_all.deb ...
+Unpacking apache2-data (2.4.54-2ubuntu1.3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../07-apache2-utils_2.4.54-2ubuntu1.3_amd64.deb ...
+Unpacking apache2-utils (2.4.54-2ubuntu1.3) ...
+Selecting previously unselected package mailcap.
+Preparing to unpack .../08-mailcap_3.70+nmu1ubuntu1_all.deb ...
+Unpacking mailcap (3.70+nmu1ubuntu1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../09-mime-support_3.66_all.deb ...
+Unpacking mime-support (3.66) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../10-apache2_2.4.54-2ubuntu1.3_amd64.deb ...
+Unpacking apache2 (2.4.54-2ubuntu1.3) ...
+Selecting previously unselected package php-common.
+Preparing to unpack .../11-php-common_2%3a92ubuntu1_all.deb ...
+Unpacking php-common (2:92ubuntu1) ...
+Selecting previously unselected package php8.1-common.
+Preparing to unpack .../12-php8.1-common_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-common (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php8.1-opcache.
+Preparing to unpack .../13-php8.1-opcache_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-opcache (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php8.1-readline.
+Preparing to unpack .../14-php8.1-readline_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-readline (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php8.1-cli.
+Preparing to unpack .../15-php8.1-cli_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-cli (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package libapache2-mod-php8.1.
+Preparing to unpack .../16-libapache2-mod-php8.1_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking libapache2-mod-php8.1 (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php8.1.
+Preparing to unpack .../17-php8.1_8.1.7-1ubuntu3.3_all.deb ...
+Unpacking php8.1 (8.1.7-1ubuntu3.3) ...
+Setting up php-common (2:92ubuntu1) ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+Setting up php8.1-common (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/exif.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ffi.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/phar.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/posix.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/tokenizer.ini with new version
+Setting up libapr1:amd64 (1.7.0-8ubuntu0.22.10.1) ...
+Setting up liblua5.3-0:amd64 (5.3.6-1build1) ...
+Setting up php8.1-readline (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/readline.ini with new version
+Setting up apache2-data (2.4.54-2ubuntu1.3) ...
+Setting up mailcap (3.70+nmu1ubuntu1) ...
+Setting up php8.1-opcache (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/opcache.ini with new version
+Setting up libaprutil1:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Setting up mime-support (3.66) ...
+Setting up libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.10.1) ...
+Setting up php8.1-cli (8.1.7-1ubuntu3.3) ...
+update-alternatives: using /usr/bin/php8.1 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar8.1 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar8.1 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+
+Creating config file /etc/php/8.1/cli/php.ini with new version
+Setting up apache2-utils (2.4.54-2ubuntu1.3) ...
+Setting up apache2-bin (2.4.54-2ubuntu1.3) ...
+Setting up libapache2-mod-php8.1 (8.1.7-1ubuntu3.3) ...
+Package apache2 is not configured yet. Will defer actions by package libapache2-mod-php8.1.
+
+Creating config file /etc/php/8.1/apache2/php.ini with new version
+No module matches
+Setting up apache2 (2.4.54-2ubuntu1.3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+info: Switch to mpm prefork for package libapache2-mod-php8.1
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+info: Executing deferred 'a2enmod php8.1' for package libapache2-mod-php8.1
+Enabling module php8.1.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Setting up php8.1 (8.1.7-1ubuntu3.3) ...
+Processing triggers for ufw (0.36.1-4build1) ...
+Processing triggers for man-db (2.10.2-2) ...
+Processing triggers for libc-bin (2.36-0ubuntu4) ...
+Processing triggers for php8.1-cli (8.1.7-1ubuntu3.3) ...
+Processing triggers for libapache2-mod-php8.1 (8.1.7-1ubuntu3.3) ...
+Scanning processes...
+Scanning candidates...
+Scanning processor microcode...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Failed to check for processor microcode upgrades.
+
+Restarting services...
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@postgis:~/tubes-sig# curl -sS https://getcomposer.org/installer | php
+All settings correct for using Composer
+Downloading...
+
+Composer (version 2.5.5) successfully installed to: /root/tubes-sig/composer.phar
+Use it: php composer.phar
+
+root@postgis:~/tubes-sig# sudo mv composer.phar /usr/local/bin/composer
+root@postgis:~/tubes-sig# sudo chmod +x /usr/local/bin/composer
+root@postgis:~/tubes-sig# composer
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 2.5.5 2023-03-21 11:50:05
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display help for the given command. When no command is given display help for the list command
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi|--no-ansi           Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+      --no-plugins               Whether to disable plugins.
+      --no-scripts               Skips the execution of all scripts defined in composer.json file.
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+      --no-cache                 Prevent use of the cache
+  -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  about                Shows a short information about Composer
+  archive              Creates an archive of this composer package
+  audit                Checks for security vulnerability advisories for installed packages
+  browse               [home] Opens the package's repository URL or homepage in your browser
+  bump                 Increases the lower limit of your composer.json requirements to the currently installed versions
+  check-platform-reqs  Check that platform requirements are satisfied
+  clear-cache          [clearcache|cc] Clears composer's internal package cache
+  completion           Dump the shell completion script
+  config               Sets config options
+  create-project       Creates new project from a package into given directory
+  depends              [why] Shows which packages cause the given package to be installed
+  diagnose             Diagnoses the system to identify common errors
+  dump-autoload        [dumpautoload] Dumps the autoloader
+  exec                 Executes a vendored binary/script
+  fund                 Discover how to help fund the maintenance of your dependencies
+  global               Allows running commands in the global composer dir ($COMPOSER_HOME)
+  help                 Display help for a command
+  init                 Creates a basic composer.json file in current directory
+  install              [i] Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json
+  licenses             Shows information about licenses of dependencies
+  list                 List commands
+  outdated             Shows a list of installed packages that have updates available, including their latest version
+  prohibits            [why-not] Shows which packages prevent the given package from being installed
+  reinstall            Uninstalls and reinstalls the given package names
+  remove               Removes a package from the require or require-dev
+  require              [r] Adds required packages to your composer.json and installs them
+  run-script           [run] Runs the scripts defined in composer.json
+  search               Searches for packages
+  self-update          [selfupdate] Updates composer.phar to the latest version
+  show                 [info] Shows information about packages
+  status               Shows a list of locally modified packages
+  suggests             Shows package suggestions
+  update               [u|upgrade] Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file
+  validate             Validates a composer.json and composer.lock
+root@postgis:~/tubes-sig# cd src
+root@postgis:~/tubes-sig/src# composer require torann/geoip
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+Info from https://repo.packagist.org: #StandWithUkraine
+./composer.json has been updated
+Running composer update torann/geoip
+Loading composer repositories with package information
+Updating dependencies
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - laravel/framework is locked to version v8.74.0 and an update of this package was not requested.
+    - laravel/framework v8.74.0 requires ext-mbstring * -> it is missing from your system. Install or enable PHP's mbstring extension.
+  Problem 2
+    - facade/ignition is locked to version 2.17.2 and an update of this package was not requested.
+    - facade/ignition 2.17.2 requires ext-curl * -> it is missing from your system. Install or enable PHP's curl extension.
+  Problem 3
+    - phpunit/phpunit is locked to version 9.5.10 and an update of this package was not requested.
+    - phpunit/phpunit 9.5.10 requires ext-dom * -> it is missing from your system. Install or enable PHP's dom extension.
+  Problem 4
+    - laravel/framework v8.74.0 requires ext-mbstring * -> it is missing from your system. Install or enable PHP's mbstring extension.
+    - laravel/sail v1.12.9 requires illuminate/console ^8.0|^9.0 -> satisfiable by laravel/framework[v8.74.0].
+    - laravel/sail is locked to version v1.12.9 and an update of this package was not requested.
+
+To enable extensions, verify that they are enabled in your .ini files:
+    - /etc/php/8.1/cli/php.ini
+    - /etc/php/8.1/cli/conf.d/10-opcache.ini
+    - /etc/php/8.1/cli/conf.d/10-pdo.ini
+    - /etc/php/8.1/cli/conf.d/20-calendar.ini
+    - /etc/php/8.1/cli/conf.d/20-ctype.ini
+    - /etc/php/8.1/cli/conf.d/20-exif.ini
+    - /etc/php/8.1/cli/conf.d/20-ffi.ini
+    - /etc/php/8.1/cli/conf.d/20-fileinfo.ini
+    - /etc/php/8.1/cli/conf.d/20-ftp.ini
+    - /etc/php/8.1/cli/conf.d/20-gettext.ini
+    - /etc/php/8.1/cli/conf.d/20-iconv.ini
+    - /etc/php/8.1/cli/conf.d/20-phar.ini
+    - /etc/php/8.1/cli/conf.d/20-posix.ini
+    - /etc/php/8.1/cli/conf.d/20-readline.ini
+    - /etc/php/8.1/cli/conf.d/20-shmop.ini
+    - /etc/php/8.1/cli/conf.d/20-sockets.ini
+    - /etc/php/8.1/cli/conf.d/20-sysvmsg.ini
+    - /etc/php/8.1/cli/conf.d/20-sysvsem.ini
+    - /etc/php/8.1/cli/conf.d/20-sysvshm.ini
+    - /etc/php/8.1/cli/conf.d/20-tokenizer.ini
+You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
+Alternatively, you can run Composer with `--ignore-platform-req=ext-mbstring --ignore-platform-req=ext-curl --ignore-platform-req=ext-dom` to temporarily ignore these required extensions.
+You can also try re-running composer require with an explicit version constraint, e.g. "composer require torann/geoip:*" to figure out if any version is installable, or "composer require torann/geoip:^2.1" if you know which you need.
+
+Installation failed, reverting ./composer.json and ./composer.lock to their original content.
+root@postgis:~/tubes-sig/src# sudo apt-get install php php-mbstring php-dom php-curl php-json php-gd php-mysql php-pgsql php-sqlite3 php-redis php-zip
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'php8.1-xml' instead of 'php-dom'
+The following additional packages will be installed:
+  libzip4 php8.1-curl php8.1-gd php8.1-igbinary php8.1-mbstring php8.1-mysql php8.1-pgsql php8.1-redis php8.1-sqlite3
+  php8.1-zip
+Suggested packages:
+  redis-server
+The following NEW packages will be installed:
+  libzip4 php php-curl php-gd php-json php-mbstring php-mysql php-pgsql php-redis php-sqlite3 php-zip php8.1-curl
+  php8.1-gd php8.1-igbinary php8.1-mbstring php8.1-mysql php8.1-pgsql php8.1-redis php8.1-sqlite3 php8.1-xml
+  php8.1-zip
+0 upgraded, 21 newly installed, 0 to remove and 110 not upgraded.
+Need to get 1292 kB of archives.
+After this operation, 4318 kB of additional disk space will be used.
+Do you want to continue? [Y/n] ^C
+root@postgis:~/tubes-sig/src# sudo apt-get install php-mbstring php-dom php-curl php-json php-gd php-pgsql php-zip
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'php8.1-xml' instead of 'php-dom'
+The following additional packages will be installed:
+  libzip4 php8.1-curl php8.1-gd php8.1-mbstring php8.1-pgsql php8.1-zip
+The following NEW packages will be installed:
+  libzip4 php-curl php-gd php-json php-mbstring php-pgsql php-zip php8.1-curl php8.1-gd php8.1-mbstring php8.1-pgsql php8.1-xml php8.1-zip
+0 upgraded, 13 newly installed, 0 to remove and 110 not upgraded.
+Need to get 800 kB of archives.
+After this operation, 2437 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 libzip4 amd64 1.7.3-1ubuntu2 [55.0 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-curl amd64 8.1.7-1ubuntu3.3 [37.5 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 php-curl all 2:8.1+92ubuntu1 [1834 B]
+Get:4 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-gd amd64 8.1.7-1ubuntu3.3 [31.6 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 php-gd all 2:8.1+92ubuntu1 [1828 B]
+Get:6 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 php-json all 2:8.1+92ubuntu1 [1834 B]
+Get:7 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-mbstring amd64 8.1.7-1ubuntu3.3 [459 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 php-mbstring all 2:8.1+92ubuntu1 [1844 B]
+Get:9 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-pgsql amd64 8.1.7-1ubuntu3.3 [61.9 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 php-pgsql all 2:8.1+92ubuntu1 [1838 B]
+Get:11 http://mirrors.digitalocean.com/ubuntu kinetic-updates/universe amd64 php8.1-zip amd64 8.1.7-1ubuntu3.3 [26.1 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 php-zip all 2:8.1+92ubuntu1 [1830 B]
+Get:13 http://mirrors.digitalocean.com/ubuntu kinetic-updates/main amd64 php8.1-xml amd64 8.1.7-1ubuntu3.3 [118 kB]
+Fetched 800 kB in 3s (240 kB/s)
+Selecting previously unselected package libzip4:amd64.
+(Reading database ... 79973 files and directories currently installed.)
+Preparing to unpack .../00-libzip4_1.7.3-1ubuntu2_amd64.deb ...
+Unpacking libzip4:amd64 (1.7.3-1ubuntu2) ...
+Selecting previously unselected package php8.1-curl.
+Preparing to unpack .../01-php8.1-curl_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-curl (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php-curl.
+Preparing to unpack .../02-php-curl_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-curl (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php8.1-gd.
+Preparing to unpack .../03-php8.1-gd_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-gd (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php-gd.
+Preparing to unpack .../04-php-gd_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-gd (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php-json.
+Preparing to unpack .../05-php-json_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-json (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php8.1-mbstring.
+Preparing to unpack .../06-php8.1-mbstring_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-mbstring (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php-mbstring.
+Preparing to unpack .../07-php-mbstring_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-mbstring (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php8.1-pgsql.
+Preparing to unpack .../08-php8.1-pgsql_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-pgsql (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php-pgsql.
+Preparing to unpack .../09-php-pgsql_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-pgsql (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php8.1-zip.
+Preparing to unpack .../10-php8.1-zip_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-zip (8.1.7-1ubuntu3.3) ...
+Selecting previously unselected package php-zip.
+Preparing to unpack .../11-php-zip_2%3a8.1+92ubuntu1_all.deb ...
+Unpacking php-zip (2:8.1+92ubuntu1) ...
+Selecting previously unselected package php8.1-xml.
+Preparing to unpack .../12-php8.1-xml_8.1.7-1ubuntu3.3_amd64.deb ...
+Unpacking php8.1-xml (8.1.7-1ubuntu3.3) ...
+Setting up php8.1-mbstring (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/mbstring.ini with new version
+Setting up php-json (2:8.1+92ubuntu1) ...
+Setting up libzip4:amd64 (1.7.3-1ubuntu2) ...
+Setting up php8.1-gd (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/gd.ini with new version
+Setting up php8.1-pgsql (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/pgsql.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/pdo_pgsql.ini with new version
+Setting up php-mbstring (2:8.1+92ubuntu1) ...
+Setting up php8.1-curl (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/curl.ini with new version
+Setting up php8.1-xml (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/dom.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/simplexml.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/xml.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/xmlreader.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/xmlwriter.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/xsl.ini with new version
+Setting up php-pgsql (2:8.1+92ubuntu1) ...
+Setting up php8.1-zip (8.1.7-1ubuntu3.3) ...
+
+Creating config file /etc/php/8.1/mods-available/zip.ini with new version
+Setting up php-gd (2:8.1+92ubuntu1) ...
+Setting up php-curl (2:8.1+92ubuntu1) ...
+Setting up php-zip (2:8.1+92ubuntu1) ...
+Processing triggers for libc-bin (2.36-0ubuntu4) ...
+Processing triggers for libapache2-mod-php8.1 (8.1.7-1ubuntu3.3) ...
+Processing triggers for php8.1-cli (8.1.7-1ubuntu3.3) ...
+Scanning processes...
+Scanning candidates...
+Scanning processor microcode...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Failed to check for processor microcode upgrades.
+
+Restarting services...
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@postgis:~/tubes-sig/src# composer require torann/geoip
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+./composer.json has been updated
+Running composer update torann/geoip
+Loading composer repositories with package information
+Updating dependencies
+Nothing to modify in lock file
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 111 installs, 0 updates, 0 removals
+As there is no 'unzip' nor '7z' command installed zip files are being unpacked using the PHP zip extension.
+This may cause invalid reports of corrupted archives. Besides, any UNIX permissions (e.g. executable) defined in the archives will be lost.
+Installing 'unzip' or '7z' (21.01+) may remediate them.
+  - Downloading doctrine/inflector (2.0.4)
+  - Downloading doctrine/lexer (1.2.1)
+  - Downloading symfony/polyfill-ctype (v1.23.0)
+  - Downloading webmozart/assert (1.10.0)
+  - Downloading dragonmantank/cron-expression (v3.1.0)
+  - Downloading symfony/polyfill-php80 (v1.23.1)
+  - Downloading symfony/polyfill-mbstring (v1.23.1)
+  - Downloading symfony/var-dumper (v5.4.0)
+  - Downloading symfony/polyfill-intl-normalizer (v1.23.0)
+  - Downloading symfony/polyfill-intl-grapheme (v1.23.1)
+  - Downloading symfony/string (v5.4.0)
+  - Downloading symfony/deprecation-contracts (v2.5.0)
+  - Downloading psr/container (1.1.2)
+  - Downloading symfony/service-contracts (v2.5.0)
+  - Downloading symfony/polyfill-php73 (v1.23.0)
+  - Downloading symfony/console (v5.4.0)
+  - Downloading psr/log (1.1.4)
+  - Downloading monolog/monolog (2.3.5)
+  - Downloading voku/portable-ascii (1.5.6)
+  - Downloading phpoption/phpoption (1.8.1)
+  - Downloading graham-campbell/result-type (v1.0.4)
+  - Downloading vlucas/phpdotenv (v5.4.0)
+  - Downloading symfony/css-selector (v5.4.0)
+  - Downloading tijsverkoyen/css-to-inline-styles (2.2.3)
+  - Downloading symfony/routing (v5.4.0)
+  - Downloading symfony/process (v5.4.0)
+  - Downloading symfony/polyfill-php72 (v1.23.0)
+  - Downloading symfony/polyfill-intl-idn (v1.23.0)
+  - Downloading symfony/mime (v5.4.0)
+  - Downloading symfony/http-foundation (v5.4.0)
+  - Downloading psr/event-dispatcher (1.0.0)
+  - Downloading symfony/event-dispatcher-contracts (v2.5.0)
+  - Downloading symfony/event-dispatcher (v5.4.0)
+  - Downloading symfony/error-handler (v5.4.0)
+  - Downloading symfony/http-kernel (v5.4.0)
+  - Downloading symfony/finder (v5.4.0)
+  - Downloading symfony/polyfill-iconv (v1.23.0)
+  - Downloading egulias/email-validator (2.1.25)
+  - Downloading swiftmailer/swiftmailer (v6.3.0)
+  - Downloading symfony/polyfill-php81 (v1.23.0)
+  - Downloading ramsey/collection (1.2.2)
+  - Downloading brick/math (0.9.3)
+  - Downloading ramsey/uuid (4.2.3)
+  - Downloading psr/simple-cache (1.0.1)
+  - Downloading opis/closure (3.6.2)
+  - Downloading symfony/translation-contracts (v2.5.0)
+  - Downloading symfony/translation (v5.4.0)
+  - Downloading nesbot/carbon (2.55.2)
+  - Downloading league/mime-type-detection (1.9.0)
+  - Downloading league/flysystem (1.1.8)
+  - Downloading nette/utils (v3.2.6)
+  - Downloading nette/schema (v1.2.2)
+  - Downloading dflydev/dot-access-data (v3.0.1)
+  - Downloading league/config (v1.1.1)
+  - Downloading league/commonmark (2.1.0)
+  - Downloading laravel/serializable-closure (v1.0.5)
+  - Downloading laravel/framework (v8.74.0)
+  - Downloading facade/ignition-contracts (1.0.2)
+  - Downloading facade/flare-client-php (1.9.1)
+  - Downloading facade/ignition (2.17.2)
+  - Downloading fakerphp/faker (v1.17.0)
+  - Downloading asm89/stack-cors (v2.0.3)
+  - Downloading fruitcake/laravel-cors (v2.0.4)
+  - Downloading psr/http-message (1.0.1)
+  - Downloading psr/http-client (1.0.1)
+  - Downloading ralouphie/getallheaders (3.0.3)
+  - Downloading psr/http-factory (1.0.1)
+  - Downloading guzzlehttp/psr7 (2.1.0)
+  - Downloading guzzlehttp/promises (1.5.1)
+  - Downloading guzzlehttp/guzzle (7.4.0)
+  - Downloading laravel/sail (v1.12.9)
+  - Downloading laravel/sanctum (v2.12.2)
+  - Downloading nikic/php-parser (v4.13.2)
+  - Downloading psy/psysh (v0.10.12)
+  - Downloading laravel/tinker (v2.6.2)
+  - Downloading hamcrest/hamcrest-php (v2.0.1)
+  - Downloading mockery/mockery (1.4.4)
+  - Downloading filp/whoops (2.14.4)
+  - Downloading nunomaduro/collision (v5.10.0)
+  - Downloading phpdocumentor/reflection-common (2.2.0)
+  - Downloading phpdocumentor/type-resolver (1.5.1)
+  - Downloading phpdocumentor/reflection-docblock (5.3.0)
+  - Downloading sebastian/version (3.0.2)
+  - Downloading sebastian/type (2.3.4)
+  - Downloading sebastian/resource-operations (3.0.3)
+  - Downloading sebastian/recursion-context (4.0.4)
+  - Downloading sebastian/object-reflector (2.0.4)
+  - Downloading sebastian/object-enumerator (4.0.4)
+  - Downloading sebastian/global-state (5.0.3)
+  - Downloading sebastian/exporter (4.0.4)
+  - Downloading sebastian/environment (5.1.3)
+  - Downloading sebastian/diff (4.0.4)
+  - Downloading sebastian/comparator (4.0.6)
+  - Downloading sebastian/code-unit (1.0.8)
+  - Downloading sebastian/cli-parser (1.0.1)
+  - Downloading phpunit/php-timer (5.0.3)
+  - Downloading phpunit/php-text-template (2.0.4)
+  - Downloading phpunit/php-invoker (3.1.1)
+  - Downloading phpunit/php-file-iterator (3.0.6)
+  - Downloading theseer/tokenizer (1.2.1)
+  - Downloading sebastian/lines-of-code (1.0.3)
+  - Downloading sebastian/complexity (2.0.2)
+  - Downloading sebastian/code-unit-reverse-lookup (2.0.3)
+  - Downloading phpunit/php-code-coverage (9.2.10)
+  - Downloading doctrine/instantiator (1.4.0)
+  - Downloading phpspec/prophecy (1.14.0)
+  - Downloading phar-io/version (3.1.0)
+  - Downloading phar-io/manifest (2.0.3)
+  - Downloading myclabs/deep-copy (1.10.2)
+  - Downloading phpunit/phpunit (9.5.10)
+  - Downloading torann/geoip (3.0.5)
+  - Installing doctrine/inflector (2.0.4): Extracting archive
+  - Installing doctrine/lexer (1.2.1): Extracting archive
+  - Installing symfony/polyfill-ctype (v1.23.0): Extracting archive
+  - Installing webmozart/assert (1.10.0): Extracting archive
+  - Installing dragonmantank/cron-expression (v3.1.0): Extracting archive
+  - Installing symfony/polyfill-php80 (v1.23.1): Extracting archive
+  - Installing symfony/polyfill-mbstring (v1.23.1): Extracting archive
+  - Installing symfony/var-dumper (v5.4.0): Extracting archive
+  - Installing symfony/polyfill-intl-normalizer (v1.23.0): Extracting archive
+  - Installing symfony/polyfill-intl-grapheme (v1.23.1): Extracting archive
+  - Installing symfony/string (v5.4.0): Extracting archive
+  - Installing symfony/deprecation-contracts (v2.5.0): Extracting archive
+  - Installing psr/container (1.1.2): Extracting archive
+  - Installing symfony/service-contracts (v2.5.0): Extracting archive
+  - Installing symfony/polyfill-php73 (v1.23.0): Extracting archive
+  - Installing symfony/console (v5.4.0): Extracting archive
+  - Installing psr/log (1.1.4): Extracting archive
+  - Installing monolog/monolog (2.3.5): Extracting archive
+  - Installing voku/portable-ascii (1.5.6): Extracting archive
+  - Installing phpoption/phpoption (1.8.1): Extracting archive
+  - Installing graham-campbell/result-type (v1.0.4): Extracting archive
+  - Installing vlucas/phpdotenv (v5.4.0): Extracting archive
+  - Installing symfony/css-selector (v5.4.0): Extracting archive
+  - Installing tijsverkoyen/css-to-inline-styles (2.2.3): Extracting archive
+  - Installing symfony/routing (v5.4.0): Extracting archive
+  - Installing symfony/process (v5.4.0): Extracting archive
+  - Installing symfony/polyfill-php72 (v1.23.0): Extracting archive
+  - Installing symfony/polyfill-intl-idn (v1.23.0): Extracting archive
+  - Installing symfony/mime (v5.4.0): Extracting archive
+  - Installing symfony/http-foundation (v5.4.0): Extracting archive
+  - Installing psr/event-dispatcher (1.0.0): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v2.5.0): Extracting archive
+  - Installing symfony/event-dispatcher (v5.4.0): Extracting archive
+  - Installing symfony/error-handler (v5.4.0): Extracting archive
+  - Installing symfony/http-kernel (v5.4.0): Extracting archive
+  - Installing symfony/finder (v5.4.0): Extracting archive
+  - Installing symfony/polyfill-iconv (v1.23.0): Extracting archive
+  - Installing egulias/email-validator (2.1.25): Extracting archive
+  - Installing swiftmailer/swiftmailer (v6.3.0): Extracting archive
+  - Installing symfony/polyfill-php81 (v1.23.0): Extracting archive
+  - Installing ramsey/collection (1.2.2): Extracting archive
+  - Installing brick/math (0.9.3): Extracting archive
+  - Installing ramsey/uuid (4.2.3): Extracting archive
+  - Installing psr/simple-cache (1.0.1): Extracting archive
+  - Installing opis/closure (3.6.2): Extracting archive
+  - Installing symfony/translation-contracts (v2.5.0): Extracting archive
+  - Installing symfony/translation (v5.4.0): Extracting archive
+  - Installing nesbot/carbon (2.55.2): Extracting archive
+  - Installing league/mime-type-detection (1.9.0): Extracting archive
+  - Installing league/flysystem (1.1.8): Extracting archive
+  - Installing nette/utils (v3.2.6): Extracting archive
+  - Installing nette/schema (v1.2.2): Extracting archive
+  - Installing dflydev/dot-access-data (v3.0.1): Extracting archive
+  - Installing league/config (v1.1.1): Extracting archive
+  - Installing league/commonmark (2.1.0): Extracting archive
+  - Installing laravel/serializable-closure (v1.0.5): Extracting archive
+  - Installing laravel/framework (v8.74.0): Extracting archive
+  - Installing facade/ignition-contracts (1.0.2): Extracting archive
+  - Installing facade/flare-client-php (1.9.1): Extracting archive
+  - Installing facade/ignition (2.17.2): Extracting archive
+  - Installing fakerphp/faker (v1.17.0): Extracting archive
+  - Installing asm89/stack-cors (v2.0.3): Extracting archive
+  - Installing fruitcake/laravel-cors (v2.0.4): Extracting archive
+  - Installing psr/http-message (1.0.1): Extracting archive
+  - Installing psr/http-client (1.0.1): Extracting archive
+  - Installing ralouphie/getallheaders (3.0.3): Extracting archive
+  - Installing psr/http-factory (1.0.1): Extracting archive
+  - Installing guzzlehttp/psr7 (2.1.0): Extracting archive
+  - Installing guzzlehttp/promises (1.5.1): Extracting archive
+  - Installing guzzlehttp/guzzle (7.4.0): Extracting archive
+  - Installing laravel/sail (v1.12.9): Extracting archive
+  - Installing laravel/sanctum (v2.12.2): Extracting archive
+  - Installing nikic/php-parser (v4.13.2): Extracting archive
+  - Installing psy/psysh (v0.10.12): Extracting archive
+  - Installing laravel/tinker (v2.6.2): Extracting archive
+  - Installing hamcrest/hamcrest-php (v2.0.1): Extracting archive
+  - Installing mockery/mockery (1.4.4): Extracting archive
+  - Installing filp/whoops (2.14.4): Extracting archive
+  - Installing nunomaduro/collision (v5.10.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.5.1): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.3.0): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/type (2.3.4): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/recursion-context (4.0.4): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/global-state (5.0.3): Extracting archive
+  - Installing sebastian/exporter (4.0.4): Extracting archive
+  - Installing sebastian/environment (5.1.3): Extracting archive
+  - Installing sebastian/diff (4.0.4): Extracting archive
+  - Installing sebastian/comparator (4.0.6): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.10): Extracting archive
+  - Installing doctrine/instantiator (1.4.0): Extracting archive
+  - Installing phpspec/prophecy (1.14.0): Extracting archive
+  - Installing phar-io/version (3.1.0): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing myclabs/deep-copy (1.10.2): Extracting archive
+  - Installing phpunit/phpunit (9.5.10): Extracting archive
+  - Installing torann/geoip (3.0.5): Extracting archive
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Discovered Package: torann/geoip
+Package manifest generated successfully.
+77 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi
+No publishable resources for tag [laravel-assets].
+Publishing complete.
+Found 9 security vulnerability advisories affecting 4 packages.
+Run composer audit for a full list of advisories.
+Using version ^3.0 for torann/geoip
+root@postgis:~/tubes-sig/src# composer install
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Discovered Package: torann/geoip
+Package manifest generated successfully.
+77 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+root@postgis:~/tubes-sig/src# nano
+.editorconfig   .gitignore      app/            composer.json   database/       public/         server.php      vendor/
+.env.example    .styleci.yml    artisan         composer.lock   package.json    resources/      storage/        webpack.mix.js
+.gitattributes  README.md       bootstrap/      config/         phpunit.xml     routes/         tests/
+
+
+root@postgis:~/tubes-sig/src# php artisan key:generate
+Application key set successfully.
+root@postgis:~/tubes-sig/src# php artisan serve
+Starting Laravel development server: http://127.0.0.1:8000
+[Fri May  5 17:20:57 2023] PHP 8.1.7-1ubuntu3.3 Development Server (http://127.0.0.1:8000) started
+^C
+root@postgis:~/tubes-sig/src# cd ..
+root@postgis:~/tubes-sig# mv src /var/www/html
+root@postgis:~/tubes-sig# ls
+README.md  database  document  prototype
+root@postgis:~/tubes-sig# cd ..
+root@postgis:~# ls
+snap  tubes-sig
+root@postgis:~# cd /var/www/html/
+root@postgis:/var/www/html# ls
+index.html  src
+root@postgis:/var/www/html# sudo chgrp -R www-data /var/www/html/src/
+root@postgis:/var/www/html# sudo chmod -R 775 /var/www/html/src/
+root@postgis:/var/www/html# cd /etc/apache2/sites-available
+root@postgis:/etc/apache2/sites-available# sudo nano laravel_project.conf
+root@postgis:/etc/apache2/sites-available# sudo a2dissite 000-default.conf
+Site 000-default disabled.
+To activate the new configuration, you need to run:
+  systemctl reload apache2
+root@postgis:/etc/apache2/sites-available# sudo a2ensite laravel_project
+Enabling site laravel_project.
+To activate the new configuration, you need to run:
+  systemctl reload apache2
+root@postgis:/etc/apache2/sites-available# sudo a2enmod rewrite
+Enabling module rewrite.
+To activate the new configuration, you need to run:
+  systemctl restart apache2
+root@postgis:/etc/apache2/sites-available# sudo systemctl restart apache2
+root@postgis:/etc/apache2/sites-available# nano
+000-default.conf      default-ssl.conf      laravel_project.conf
+root@postgis:/etc/apache2/sites-available# nano
+000-default.conf      default-ssl.conf      laravel_project.conf
+root@postgis:/etc/apache2/sites-available# nano laravel_project.conf
+root@postgis:/etc/apache2/sites-available# sudo a2ensite laravel_project
+Site laravel_project already enabled
+root@postgis:/etc/apache2/sites-available# sudo systemctl restart apache2
+root@postgis:/etc/apache2/sites-available# apt -y install certbot
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  python3-acme python3-certbot python3-configargparse python3-icu python3-josepy python3-parsedatetime python3-requests-toolbelt python3-rfc3339 python3-zope.component python3-zope.event
+  python3-zope.hookable
+Suggested packages:
+  python-certbot-doc python3-certbot-apache python3-certbot-nginx python-acme-doc
+The following NEW packages will be installed:
+  certbot python3-acme python3-certbot python3-configargparse python3-icu python3-josepy python3-parsedatetime python3-requests-toolbelt python3-rfc3339 python3-zope.component
+  python3-zope.event python3-zope.hookable
+0 upgraded, 12 newly installed, 0 to remove and 110 not upgraded.
+Need to get 970 kB of archives.
+After this operation, 4996 kB of additional disk space will be used.
+Get:1 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-josepy all 1.13.0-1 [22.0 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 python3-requests-toolbelt all 0.9.1-2 [38.4 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-rfc3339 all 1.1-3 [7110 B]
+Get:4 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-acme all 1.29.0-1 [37.2 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-configargparse all 1.5.3-1 [26.9 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-parsedatetime all 2.6-3 [32.8 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-zope.hookable amd64 5.1.0-1build1 [11.6 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-zope.event all 4.4-3 [8180 B]
+Get:9 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-zope.component all 5.0.1-1 [41.6 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-certbot all 1.29.0-1 [182 kB]
+Get:11 http://mirrors.digitalocean.com/ubuntu kinetic/main amd64 python3-icu amd64 2.9-2 [541 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 certbot all 1.29.0-1 [21.4 kB]
+Fetched 970 kB in 6s (152 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package python3-josepy.
+(Reading database ... 80063 files and directories currently installed.)
+Preparing to unpack .../00-python3-josepy_1.13.0-1_all.deb ...
+Unpacking python3-josepy (1.13.0-1) ...
+Selecting previously unselected package python3-requests-toolbelt.
+Preparing to unpack .../01-python3-requests-toolbelt_0.9.1-2_all.deb ...
+Unpacking python3-requests-toolbelt (0.9.1-2) ...
+Selecting previously unselected package python3-rfc3339.
+Preparing to unpack .../02-python3-rfc3339_1.1-3_all.deb ...
+Unpacking python3-rfc3339 (1.1-3) ...
+Selecting previously unselected package python3-acme.
+Preparing to unpack .../03-python3-acme_1.29.0-1_all.deb ...
+Unpacking python3-acme (1.29.0-1) ...
+Selecting previously unselected package python3-configargparse.
+Preparing to unpack .../04-python3-configargparse_1.5.3-1_all.deb ...
+Unpacking python3-configargparse (1.5.3-1) ...
+Selecting previously unselected package python3-parsedatetime.
+Preparing to unpack .../05-python3-parsedatetime_2.6-3_all.deb ...
+Unpacking python3-parsedatetime (2.6-3) ...
+Selecting previously unselected package python3-zope.hookable.
+Preparing to unpack .../06-python3-zope.hookable_5.1.0-1build1_amd64.deb ...
+Unpacking python3-zope.hookable (5.1.0-1build1) ...
+Selecting previously unselected package python3-zope.event.
+Preparing to unpack .../07-python3-zope.event_4.4-3_all.deb ...
+Unpacking python3-zope.event (4.4-3) ...
+Selecting previously unselected package python3-zope.component.
+Preparing to unpack .../08-python3-zope.component_5.0.1-1_all.deb ...
+Unpacking python3-zope.component (5.0.1-1) ...
+Selecting previously unselected package python3-certbot.
+Preparing to unpack .../09-python3-certbot_1.29.0-1_all.deb ...
+Unpacking python3-certbot (1.29.0-1) ...
+Selecting previously unselected package python3-icu.
+Preparing to unpack .../10-python3-icu_2.9-2_amd64.deb ...
+Unpacking python3-icu (2.9-2) ...
+Selecting previously unselected package certbot.
+Preparing to unpack .../11-certbot_1.29.0-1_all.deb ...
+Unpacking certbot (1.29.0-1) ...
+Setting up python3-configargparse (1.5.3-1) ...
+Setting up python3-requests-toolbelt (0.9.1-2) ...
+Setting up python3-parsedatetime (2.6-3) ...
+Setting up python3-icu (2.9-2) ...
+Setting up python3-zope.event (4.4-3) ...
+Setting up python3-zope.hookable (5.1.0-1build1) ...
+Setting up python3-josepy (1.13.0-1) ...
+Setting up python3-rfc3339 (1.1-3) ...
+Setting up python3-zope.component (5.0.1-1) ...
+Setting up python3-acme (1.29.0-1) ...
+Setting up python3-certbot (1.29.0-1) ...
+Setting up certbot (1.29.0-1) ...
+Created symlink /etc/systemd/system/timers.target.wants/certbot.timer → /lib/systemd/system/certbot.timer.
+Processing triggers for man-db (2.10.2-2) ...
+Scanning processes...
+Scanning candidates...
+Scanning processor microcode...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Failed to check for processor microcode upgrades.
+
+Restarting services...
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@postgis:/etc/apache2/sites-available# certbot certonly --webroot -w /var/www/html -d togi.fadila.tech
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address (used for urgent renewal and security notices)
+ (Enter 'c' to cancel): markus.togi@gmail.com
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.3-September-21-2022.pdf. You must
+agree in order to register with the ACME server. Do you agree?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: yes
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing, once your first certificate is successfully issued, to
+share your email address with the Electronic Frontier Foundation, a founding
+partner of the Let's Encrypt project and the non-profit organization that
+develops Certbot? We'd like to send you email about our work encrypting the web,
+EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: n
+Account registered.
+Requesting a certificate for togi.fadila.tech
+
+Certbot failed to authenticate some domains (authenticator: webroot). The Certificate Authority reported these problems:
+  Domain: togi.fadila.tech
+  Type:   unauthorized
+  Detail: 167.99.76.33: Invalid response from http://togi.fadila.tech/.well-known/acme-challenge/u6NouFRMCn83YkPKHVNGUbiIrNI5mcRBvTmjJlW3bmo: 404
+
+Hint: The Certificate Authority failed to download the temporary challenge files created by Certbot. Ensure that the listed domains serve their content from the provided --webroot-path/-w and that files created there can be downloaded from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+root@postgis:/etc/apache2/sites-available# sudo apt install certbot python3-certbot-apache
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+certbot is already the newest version (1.29.0-1).
+The following additional packages will be installed:
+  augeas-lenses libaugeas0 python3-augeas
+Suggested packages:
+  augeas-doc augeas-tools python-certbot-apache-doc
+The following NEW packages will be installed:
+  augeas-lenses libaugeas0 python3-augeas python3-certbot-apache
+0 upgraded, 4 newly installed, 0 to remove and 110 not upgraded.
+Need to get 597 kB of archives.
+After this operation, 2781 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 augeas-lenses all 1.13.0-1 [321 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 libaugeas0 amd64 1.13.0-1 [200 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-augeas all 0.5.0-1.1 [9124 B]
+Get:4 http://mirrors.digitalocean.com/ubuntu kinetic/universe amd64 python3-certbot-apache all 1.29.0-1 [66.4 kB]
+Fetched 597 kB in 0s (4883 kB/s)
+Selecting previously unselected package augeas-lenses.
+(Reading database ... 80457 files and directories currently installed.)
+Preparing to unpack .../augeas-lenses_1.13.0-1_all.deb ...
+Unpacking augeas-lenses (1.13.0-1) ...
+Selecting previously unselected package libaugeas0:amd64.
+Preparing to unpack .../libaugeas0_1.13.0-1_amd64.deb ...
+Unpacking libaugeas0:amd64 (1.13.0-1) ...
+Selecting previously unselected package python3-augeas.
+Preparing to unpack .../python3-augeas_0.5.0-1.1_all.deb ...
+Unpacking python3-augeas (0.5.0-1.1) ...
+Selecting previously unselected package python3-certbot-apache.
+Preparing to unpack .../python3-certbot-apache_1.29.0-1_all.deb ...
+Unpacking python3-certbot-apache (1.29.0-1) ...
+Setting up augeas-lenses (1.13.0-1) ...
+Setting up libaugeas0:amd64 (1.13.0-1) ...
+Setting up python3-augeas (0.5.0-1.1) ...
+Setting up python3-certbot-apache (1.29.0-1) ...
+Processing triggers for libc-bin (2.36-0ubuntu4) ...
+Scanning processes...
+Scanning candidates...
+Scanning processor microcode...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+Failed to check for processor microcode upgrades.
+
+Restarting services...
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@postgis:/etc/apache2/sites-available# certbot --version
+certbot 1.29.0
+root@postgis:/etc/apache2/sites-available# sudo ufw status
+Status: inactive
+root@postgis:/etc/apache2/sites-available# sudo ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
+root@postgis:/etc/apache2/sites-available# sudo ufw status
+Status: active
+root@postgis:/etc/apache2/sites-available# sudo ufw allow 'Apache Full'
+Rule added
+Rule added (v6)
+root@postgis:/etc/apache2/sites-available# sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+Apache Full                ALLOW       Anywhere
+Apache Full (v6)           ALLOW       Anywhere (v6)
+root@postgis:/etc/apache2/sites-available# sudo certbot --apache -d togi.fadilroot@postgis:/etc/apache2/sites-available# sudo certbot --apache -d togi.fadilla.tech
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for togi.fadilla.tech
+
+Certbot failed to authenticate some domains (authenticator: apache). The Certificate Authority reported these problems:
+  Domain: togi.fadilla.tech
+  Type:   dns
+  Detail: DNS problem: NXDOMAIN looking up A for togi.fadilla.tech - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for togi.fadilla.tech - check that a DNS record exists for this domain
+
+Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+root@postgis:/etc/apache2/sites-available# sudo certbot --apache -d togi.fadila.tech
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for togi.fadila.tech
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/togi.fadila.tech/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/togi.fadila.tech/privkey.pem
+This certificate expires on 2023-08-03.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+
+Deploying certificate
+Successfully deployed certificate for togi.fadila.tech to /etc/apache2/sites-available/laravel_project-le-ssl.conf
+Congratulations! You have successfully enabled HTTPS on https://togi.fadila.tech
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+root@postgis:/etc/apache2/sites-available# sudo certbot renew --dry-run
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/togi.fadila.tech.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Account registered.
+Simulating renewal of an existing certificate for togi.fadila.tech
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Congratulations, all simulated renewals succeeded:
+  /etc/letsencrypt/live/togi.fadila.tech/fullchain.pem (success)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+root@postgis:/etc/apache2/sites-available# cd ~/
+.cache/         .config/        .local/         .ssh/           .vscode-server/ snap/           tubes-sig/
+root@postgis:/etc/apache2/sites-available# cd ~/
+.cache/         .config/        .local/         .ssh/           .vscode-server/ snap/           tubes-sig/
+root@postgis:/etc/apache2/sites-available# cd ~/tubes-sig/
+.git/      database/  document/  prototype/
+root@postgis:/etc/apache2/sites-available# Certbot failed to authenticate some domains (authenticator: webroot).cd ~/tubes-sig/

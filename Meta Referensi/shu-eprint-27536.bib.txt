@@ -1,0 +1,13 @@
+@incollection{shu27536,
+       booktitle = {AMCIS 2020 Proceedings},
+           month = {July},
+           title = {Personal Extreme Programming: Exploring Developers' Adoption},
+          author = {Gloria Ejehiohen Iyawa},
+       publisher = {bepress},
+            year = {2020},
+         journal = {AMCIS 2020 PROCEEDINGS},
+        keywords = {Personal extreme programming; adoption; developers; extreme programming; diffusion of innovation theory; factors; influencing; affecting; challenges; benefits},
+             url = {http://shura.shu.ac.uk/27536/},
+        abstract = {Personal Extreme Programming (PXP), evolving from the popular agile methodology, Extreme Programming (XP) and Personal Software Process (PSP), has been suggested as a methodology for autonomous developers who aim to incorporate the principles of XP in the development of software applications. However, there is limited research exploring the adoption of PXP. The purpose of this paper was to explore developers? adoption of PXP. The constructs of Roger?s (1962) Diffusion of Innovation (DoI) Theory and Technology Acceptance Model were used to investigate developers? adoption of PXP. Semi-structured interviews were conducted with developers who had experience in PXP practices. Although the findings revealed that PXP is beneficial in software development, the challenges of PXP in software projects include increased chances for errors and lack of skills diversity. Autonomous software developers should, however, evaluate their level of software development skills, experience and amount of work required when considering PXP as a software methodology.}
+}
+
